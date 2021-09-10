@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spider-Man | Your good friend</title>
+</head>
+
+<body>
+    <!-- 
+        Test Viernes 10-09-2021
+        0. NO UTILIZAR LIBRERIAS EXTERNAS: NO BOOTSTRAP, NO MATERIAL DESIGN, solamente codigo puro CSS.
+        1. Debe seleccionar propósito del sitio web: Blog Personal, Corporativo/Informativo.
+        2. Debe tener menú con secciones del sitio
+        3. Cada opción del menú debe dirigirme a la seccion interna del mismo sitio.
+        4. Debe estructurar por secciones el sitio web.
+        5. Debe tener al menos 3 secciones
+        6. Debe usar correctamente las etiquetas semánticas
+        7. Debe tener header, menú, footer
+        8. Debe incluir imágenes afines a la temática del sitio.
+        9. Debe tener al menos 4 imágenes.
+        10. Debe tener formulario de contacto en el footer de la pagina.
+     -->
+
+    <header class="parallax">
+        <nav class="bg-color-blue">
+            <ul>
+                <li><a class="text-color-white" href="#">Home</a></li>
+                <li><a class="text-color-white" href="#about-me">About Me</a></li>
+                <li><a class="text-color-white" href="#services">Services</a></li>
+                <li><a class="text-color-white" href="#gallery">Gallery</a></li>
+                <li><a class="text-color-white" href="#contact-me">Contact me</a></li>
+            </ul>
+        </nav>
+        <!-- <img src="img\spidey-profile-photo.jpg" alt="Spiderman Profile"> -->
+        <div class="row container-heading">
+            <div class="heading">
+                <h1 id="idMainTitleAndUnique">
+                    Spider-Man
+                </h1>
+                <p>
+                    "Soy tu buen vecino spidey"
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+    <section id="about-me">
+        <div class="container">
+            <div class="row">
+                <h3>Who is</h3>
+                <h2>Spider-Man</h2>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Spider-Man, comic-book character who was the original everyman superhero. 15 (1962), American teenager Peter Parker, a poor sickly orphan, is bitten by a radioactive spider. ... As a result of the bite, he gains superhuman strength,
+                        speed, and agility along with the ability to cling to walls.</p>
+                </div>
+                <div class="col-6">
+                    <img src="img/spidey-profile-photo.jpg" alt="Spider Man Photo Profile">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <h2>Services</h2>
+                <p>No solo es salvar el dia, tambien mato mis tigritos </p>
+            </div>
+            <div class="row">
+                <article>
+                    <i></i>
+                    <h2>Rapitendero a domi</h2>
+                    <p>De mi cocina a tu casa</p>
+                </article>
+                <article>
+                    <i></i>
+                    <h2>CumpleSpidey</h2>
+                    <p>Champeta para tu casa</p>
+                </article>
+                <article>
+                    <i></i>
+                    <h2>Canta conmigo</h2>
+                    <p>Cantemos juntos hasta el amanecer</p>
+                </article>
+                <article>
+                    <i></i>
+                    <h2>Grito de ayuda</h2>
+                    <p>Cuando te sientas en apuros, un grito infantil y ahi estaré</p>
+                </article>
+                <article>
+                    <i></i>
+                    <h2>Personal Trainer</h2>
+                    <p>Ponte en forma conmigo, a endurecer esas celulitis. Sudemos esa gota gorda</p>
+                </article>
+                <article>
+                    <i></i>
+                    <h2>Party Deadpool Crossover</h2>
+                    <p>Un cumbión con deadpool ¿ Quien será el mejor ?</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <h2>Gallery</h2>
+                <p>Los mejores de mi vida</p>
+            </div>
+            <div class="row">
+                <div class="gallery-detail">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <h2>Contáctame</h2>
+                <p>24/7 los 365 del año, totalmente disponible, sin vida social, mas que para ustedes, hasta Mary Jane no tiene esos privilegios</p>
+            </div>
+            <div class="row" id="contact-me">
+                <form action="">
+                    <label for="fullName">Nombre Completo</label>
+                    <input type="text" id="fullName" name="fullName">
+                    <br><br>
+
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+
+                    <label for="message">Tu mensaje</label>
+                    <textarea name="" id="message" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+            <div class="row">
+                <a href="#idMainTitleAndUnique">Go to h1</a>
+                <a href="mailto:sunombre@gmail.com"> Contact me here</a>
+                <p> Copyright 2021 - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

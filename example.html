@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nuestro primer website</title>
+</head>
+
+<body>
+    <!-- 
+        Test Viernes 10-09-2021
+        0. NO UTILIZAR LIBRERIAS EXTERNAS: NO BOOTSTRAP, NO MATERIAL DESIGN, solamente codigo puro CSS.
+        1. Debe seleccionar propósito del sitio web: Blog Personal, Corporativo/Informativo.
+        2. Debe tener menú con secciones del sitio
+        3. Cada opción del menú debe dirigirme a la seccion interna del mismo sitio.
+        4. Debe estructurar por secciones el sitio web.
+        5. Debe tener al menos 3 secciones
+        6. Debe usar correctamente las etiquetas semánticas
+        7. Debe tener header, menú, footer
+        8. Debe incluir imágenes afines a la temática del sitio.
+        9. Debe tener al menos 4 imágenes.
+        10. Debe tener formulario de contacto en el footer de la pagina.
+     -->
+
+
+    <!-- div.container#idExample>ul>li*5>a[href="#"]{Un Texto} -->
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact me</a></li>
+            </ul>
+        </nav>
+        <!-- id = attribute/it works like parameter unique by name -->
+        <!-- class= atribute/it works like selector -->
+        <h1 id="idMainTitleAndUnique">
+            Spider-Man
+        </h1>
+    </header>
+
+    <hr>
+    <section>
+        <article>
+            <h2 class="multiple">1 Titulo del post = Subtitulo de mi blog</h2>
+            <p> Soy una breve descripcion </p>
+            <img src="https://phantomlandscapes.files.wordpress.com/2021/04/html-css-javascript.jpg" width="400">
+            <p>Texto del articulo</p>
+        </article>
+        <article>
+            <h2 class="multiple">2 Titulo del post = Subtitulo de mi blog</h2>
+            <p> Soy una breve descripcion </p>
+            <img src="https://ichi.pro/assets/images/max/724/1*_q2SphBRNg0Ri18EhxPOzA.png" width="400">
+            <p>Texto del articulo</p>
+        </article>
+        <article>
+            <h2 class="multiple">3 Titulo del post = Subtitulo de mi blog</h2>
+            <p> Soy una breve descripcion </p>
+            <img src="https://i.ytimg.com/vi/8lA_k7nlO-c/maxresdefault.jpg" width="400">
+            <p>Texto del articulo</p>
+        </article>
+    </section>
+    <hr>
+    <footer>
+        <!-- # reference by tagId -->
+        <a href="#idMainTitleAndUnique">Go to h1</a>
+        <a href="mailto:sunombre@gmail.com"> Contact me here</a>
+        <p> Copyright 2021 - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
