@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img\spidey-gallery1.jpg" type="image/x-icon">
     <title>Spider-Man | Your good friend</title>
 </head>
 
@@ -25,7 +28,7 @@
         10. Debe tener formulario de contacto en el footer de la pagina.
      -->
 
-    <header class="parallax">
+    <header id="header" class="parallax">
         <nav class="bg-color-blue">
             <ul>
                 <li><a class="text-color-white" href="#">Home</a></li>
@@ -48,106 +51,108 @@
         </div>
     </header>
 
-    <hr>
-    <section id="about-me">
+    <section id="about-me" class="bg-color-blue text-color-white">
         <div class="container">
-            <div class="row">
+            <div class="row flex-col text-center">
                 <h3>Who is</h3>
                 <h2>Spider-Man</h2>
             </div>
-            <div class="row">
+            <div class="row flex-center">
                 <div class="col-6">
                     <p>Spider-Man, comic-book character who was the original everyman superhero. 15 (1962), American teenager Peter Parker, a poor sickly orphan, is bitten by a radioactive spider. ... As a result of the bite, he gains superhuman strength,
                         speed, and agility along with the ability to cling to walls.</p>
                 </div>
                 <div class="col-6">
-                    <img src="img/spidey-profile-photo.jpg" alt="Spider Man Photo Profile">
+                    <img class="rounded" src="img/spidey-profile-photo.jpg" alt="Spider Man Photo Profile">
                 </div>
             </div>
         </div>
     </section>
-    <hr>
     <section id="services">
         <div class="container">
-            <div class="row">
-                <h2>Services</h2>
-                <p>No solo es salvar el dia, tambien mato mis tigritos </p>
+            <div class="flex-col text-center">
+                <h2 class="text-color-blue">Services</h2>
+                <p class="text-color-blue">No solo es salvar el dia, tambien mato mis tigritos </p>
             </div>
-            <div class="row">
+            <div class="row flex-wrap">
                 <article>
-                    <i></i>
+                    <i class="fa fa-hamburger fa-3x"></i>
                     <h2>Rapitendero a domi</h2>
                     <p>De mi cocina a tu casa</p>
                 </article>
                 <article>
-                    <i></i>
+                    <i class="fa fa-gift fa-3x"></i>
                     <h2>CumpleSpidey</h2>
                     <p>Champeta para tu casa</p>
                 </article>
                 <article>
-                    <i></i>
+                    <i class="fa fa-microphone-alt fa-3x"></i>
                     <h2>Canta conmigo</h2>
                     <p>Cantemos juntos hasta el amanecer</p>
                 </article>
                 <article>
-                    <i></i>
+                    <i class="fa fa-user-ninja fa-3x"></i>
                     <h2>Grito de ayuda</h2>
                     <p>Cuando te sientas en apuros, un grito infantil y ahi estaré</p>
                 </article>
                 <article>
-                    <i></i>
+                    <i class="fa fa-dumbbell fa-3x"></i>
                     <h2>Personal Trainer</h2>
                     <p>Ponte en forma conmigo, a endurecer esas celulitis. Sudemos esa gota gorda</p>
                 </article>
                 <article>
-                    <i></i>
+                    <i class="fa fa-democrat fa-3x"></i>
                     <h2>Party Deadpool Crossover</h2>
                     <p>Un cumbión con deadpool ¿ Quien será el mejor ?</p>
                 </article>
             </div>
         </div>
     </section>
-    <hr>
     <section id="gallery">
         <div class="container">
-            <div class="row">
+            <div class="row flex-col text-center">
                 <h2>Gallery</h2>
-                <p>Los mejores de mi vida</p>
+                <p>Los mejores momentos de mi vida</p>
             </div>
-            <div class="row">
+            <div class="row text-center">
                 <div class="gallery-detail">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="img/spidey-gallery1.jpg">
+                    <img src="img/spidey-gallery2.jpg">
+                    <img src="img/spidey-gallery3.jpg">
+                    <img src="img/spidey-gallery4.jpg">
                 </div>
             </div>
         </div>
     </section>
-    <hr>
-    <footer>
+    <footer class="bg-color-blue text-color-white">
         <div class="container">
-            <div class="row">
+            <div class="row flex-col text-center">
                 <h2>Contáctame</h2>
-                <p>24/7 los 365 del año, totalmente disponible, sin vida social, mas que para ustedes, hasta Mary Jane no tiene esos privilegios</p>
-            </div>
-            <div class="row" id="contact-me">
-                <form action="">
-                    <label for="fullName">Nombre Completo</label>
-                    <input type="text" id="fullName" name="fullName">
-                    <br><br>
 
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" name="email">
-                    <br><br>
-
-                    <label for="message">Tu mensaje</label>
-                    <textarea name="" id="message" cols="30" rows="10"></textarea>
-                </form>
             </div>
+            <div class="row flex-wrap" id="contact-me">
+                <article class="text-center">
+                    <p> Los 365 del año,<br> 7 dias a la semana,<br> 24 horas al dia,<br> totalmente disponible,<br> sin vida social,<br> mas que para ustedes,<br> hasta Mary Jane no tiene esos privilegios</p>
+                </article>
+                <article>
+                    <form action="">
+                        <label for="fullName">Nombre Completo</label>
+                        <input type="text" id="fullName" name="fullName">
+                        <br><br>
+
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email">
+                        <br><br>
+
+                        <label for="message">Tu mensaje</label>
+                        <textarea name="" id="message" cols="30" rows="10"></textarea>
+                    </form>
+                </article>
+            </div>
+            <hr>
             <div class="row">
-                <a href="#idMainTitleAndUnique">Go to h1</a>
-                <a href="mailto:sunombre@gmail.com"> Contact me here</a>
+                <a id="btn-go-to-top" href="#header"><i class="fas fa-arrow-up"></i></a>
+                <a class="text-color-white" href="mailto:sunombre@gmail.com"> Contact me here</a>
                 <p> Copyright 2021 - Todos los derechos reservados</p>
             </div>
         </div>
