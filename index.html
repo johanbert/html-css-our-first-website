@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="shortcut icon" href="img\spidey-gallery1.jpg" type="image/x-icon">
     <title>Spider-Man | Your good friend</title>
 </head>
@@ -124,6 +127,22 @@
             </div>
         </div>
     </section>
+    <section id="iframe" class="parallax">
+        <div class="container">
+            <div class="row">
+                <iframe src="https://www.youtube.com/embed/Hxai1s3IWOU?start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="iframe">
+        <div class="container">
+            <div class="row">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.5164107565!2d-74.2478938043006!3d4.648283717342738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1631667030222!5m2!1ses-419!2sco"
+                    width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
     <footer class="bg-color-blue text-color-white">
         <div class="container">
             <div class="row flex-col text-center">
@@ -136,16 +155,45 @@
                 </article>
                 <article>
                     <form action="">
-                        <label for="fullName">Nombre Completo</label>
-                        <input type="text" id="fullName" name="fullName">
-                        <br><br>
+                        <fieldset>
+                            <legend>Datos de contacto</legend>
+                            <label for="fullName">Nombre Completo</label>
+                            <input type="text" id="fullName" name="fullName">
+                            <br><br>
 
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" name="email">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email">
+                            <br><br>
+                            <label for="select">Pais</label>
+                            <select name="country" id="select">
+                                <option>Seleccionar</option>
+                                <option>Colombia</option>
+                                <option>Otro</option>
+                            </select>
+                        </fieldset>
                         <br><br>
 
                         <label for="message">Tu mensaje</label>
                         <textarea name="" id="message" cols="30" rows="10"></textarea>
+                        <br><br>
+
+                        <fieldset>
+                            <legend>Intereses Principales</legend>
+                            <input type="radio" name="doYouLike"> Deadpool
+                            <br>
+                            <input type="radio" name="doYouLike"> Spidey
+                        </fieldset>
+                        <br><br>
+                        <fieldset>
+                            <legend>Intereses Secundarios</legend>
+                            <input type="checkbox" name="doYouLike"> Deportes
+                            <br>
+                            <input type="checkbox" name="doYouLike"> Juegos
+                            <br>
+                            <input type="checkbox" name="doYouLike"> Noticias
+                        </fieldset>
+                        <br><br>
+                        <input type="submit" value="Enviar">
                     </form>
                 </article>
             </div>
